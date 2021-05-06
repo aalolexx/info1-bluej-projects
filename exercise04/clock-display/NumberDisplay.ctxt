@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=NumberDisplay
-comment0.text=\r\n\ The\ NumberDisplay\ class\ represents\ a\ digital\ number\ display\ that\ can\ hold\r\n\ values\ from\ zero\ to\ a\ given\ limit.\ The\ limit\ can\ be\ specified\ when\ creating\r\n\ the\ display.\ The\ values\ range\ from\ zero\ (inclusive)\ to\ limit-1.\ If\ used,\r\n\ for\ example,\ for\ the\ seconds\ on\ a\ digital\ clock,\ the\ limit\ would\ be\ 60,\ \r\n\ resulting\ in\ display\ values\ from\ 0\ to\ 59.\ When\ incremented,\ the\ display\ \r\n\ automatically\ rolls\ over\ to\ zero\ when\ reaching\ the\ limit.\r\n\ \r\n\ @author\ Michael\ K\u00F6lling\ and\ David\ J.\ Barnes\r\n\ @version\ 2016.02.29\r\n
+comment0.text=\r\n\ The\ NumberDisplay\ class\ represents\ a\ digital\ number\ display\ that\ can\ hold\r\n\ values\ from\ zero\ to\ a\ given\ limit.\ The\ limit\ can\ be\ specified\ when\ creating\r\n\ the\ display.\ The\ values\ range\ from\ zero\ (inclusive)\ to\ limit-1.\ If\ used,\r\n\ for\ example,\ for\ the\ seconds\ on\ a\ digital\ clock,\ the\ limit\ would\ be\ 60,\ \r\n\ resulting\ in\ display\ values\ from\ 0\ to\ 59.\ When\ incremented,\ the\ display\ \r\n\ automatically\ rolls\ over\ to\ zero\ when\ reaching\ the\ limit.\r\n\ \r\n\ @author\ Michael\ K\u00F6lling\ and\ David\ J.\ Barnes\ enhanced\ by\ Alexander\ Ehrenh\u00F6fer\r\n\ @version\ 2021.05.05\r\n
 comment1.params=rollOverLimit
 comment1.target=NumberDisplay(int)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ NumberDisplay.\r\n\ Set\ the\ limit\ at\ which\ the\ display\ rolls\ over.\r\n

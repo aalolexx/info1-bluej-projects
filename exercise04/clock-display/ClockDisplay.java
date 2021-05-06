@@ -9,8 +9,8 @@
  * and reacts by incrementing the display. This is done in the usual clock
  * fashion: the hour increments when the minutes roll over to zero.
  * 
- * @author Michael Kölling and David J. Barnes
- * @version 2016.02.29
+ * @author Michael Kölling and David J. Barnes enhanced by Alexander Ehrenhöfer
+ * @version 2021.05.05
  */
 public class ClockDisplay
 {
@@ -34,11 +34,32 @@ public class ClockDisplay
      * creates a new clock set at the time specified by the 
      * parameters.
      */
-    public ClockDisplay(int hour, int minute)
+    public ClockDisplay(int europeanHour, int minute)
     {
         hours = new NumberDisplay(24);
         minutes = new NumberDisplay(60);
-        setTime(hour, minute);
+        setTime(europeanHour, minute);
+    }
+    
+    /**
+     * Constructor to set the time by american format
+     */
+    public ClockDisplay(int americanHour, int minute, String postFix)
+    {
+        hours = new NumberDisplay(24);
+        minutes = new NumberDisplay(60);
+            
+        // Check if the hour input is valid for american format
+        if (americanHour > 12) {
+            System.err.println("Invalid time input for american format");
+            updateDisplay();
+            return;
+        }
+        
+        // Map the american hour to a european one
+        int europeanHour = mapAmericanToEuropean(americanHour, postFix);
+        
+        setTime(europeanHour, minute);
     }
 
     /**
@@ -64,6 +85,18 @@ public class ClockDisplay
         minutes.setValue(minute);
         updateDisplay();
     }
+    
+    /**
+     * Set the time of the display to the specified hour and
+     * minute as an american format.
+     */
+    public void setTime(int americanHour, int minute, String postFix)
+    {
+        int europeanHour = mapAmericanToEuropean(americanHour, postFix);
+        hours.setValue(europeanHour);
+        minutes.setValue(minute);
+        updateDisplay();
+    }
 
     /**
      * Return the current time of this display in the format HH:MM.
@@ -75,10 +108,45 @@ public class ClockDisplay
     
     /**
      * Update the internal string that represents the display.
+     * Note: This method creates an american style output.
      */
     private void updateDisplay()
     {
-        displayString = hours.getDisplayValue() + ":" + 
-                        minutes.getDisplayValue();
+        String postFix;
+        int americanHours;
+        
+        if (hours.getValue() >= 12) {
+            postFix = "PM";
+            if (hours.getValue() == 12) {
+                americanHours = 12;
+            } else {
+                americanHours = hours.getValue() - 12;
+            }
+        } else {
+            postFix ="AM";
+            if (hours.getValue() == 0) {
+                americanHours = 12;
+            } else {
+                americanHours = hours.getValue();
+            }
+        }
+        displayString = americanHours + ":" + 
+                        minutes.getDisplayValue() + " " +
+                        postFix;
+    }
+    
+    private int mapAmericanToEuropean(int americanHour, String postFix) 
+    {
+        int europeanHour;
+        if (postFix == "PM") {
+            europeanHour = americanHour + 12;
+        } else {
+            if (americanHour == 12) {
+                europeanHour = 0;
+            } else {
+                europeanHour = americanHour;
+            }
+        }
+        return europeanHour;
     }
 }
