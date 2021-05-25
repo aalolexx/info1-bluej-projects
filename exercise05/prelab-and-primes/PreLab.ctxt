@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=PreLab
+comment0.text=\r\n\ Fill\ in\ your\ solutions\ for\ the\ PreLab\ in\r\n\ the\ corresponding\ methods.\r\n\ \r\n\ @author\ Barne\ Kleinen\r\n
+comment1.params=
+comment1.target=void\ methodTester()
+comment2.params=
+comment2.target=void\ printMultiplesOf5()
+comment3.params=a\ b
+comment3.target=int\ sumBetween(int,\ int)
+comment4.params=imi1
+comment4.target=void\ printStudentList(java.util.Collection)
+comment5.params=num
+comment5.target=boolean\ isPrime(int)
+comment6.params=
+comment6.target=int\ countPrimesSmallerThan1000()
+numComments=7
