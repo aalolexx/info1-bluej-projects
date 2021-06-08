@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Responder
+comment1.params=
+comment1.target=Responder()
+comment1.text=\r\n\ Construct\ a\ Responder\ -\ nothing\ to\ do\r\n
+comment2.params=text
+comment2.target=java.lang.String\ generateResponse(java.lang.String)
+comment2.text=\r\n\ Generate\ a\ response.\r\n\ @param\ text\ the\ question\ of\ the\ user\r\n\ @return\ \ \ A\ string\ that\ should\ be\ displayed\ as\ the\ response\r\n
+comment3.params=
+comment3.target=void\ addAnswerData()
+comment3.text=\r\n\ Adding\ the\ answer\ Data\ to\ the\ Arrays\r\n
+comment4.params=text
+comment4.target=java.lang.String\ neutralizeString(java.lang.String)
+comment4.text=\r\n\ Neutralize\ String\r\n\ Removed\ double\ spaces\ etc\r\n
+numComments=5
