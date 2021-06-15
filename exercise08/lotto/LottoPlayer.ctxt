@@ -1,13 +1,16 @@
 #BlueJ class context
 comment0.target=LottoPlayer
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ LottoPlayer\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Picks\ random\ Lotto\ numbers\ and\ evaluates\ the\ results\r\n\r\n\ @author\ Alexander\ Ehrenh\u00F6fer\r\n\ @version\ 03.06.2021\r\n
 comment1.params=
 comment1.target=LottoPlayer()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ LottoPlayer\r\n
 comment2.params=
 comment2.target=void\ start()
+comment2.text=\r\n\ Start\ the\ Lotto\ process\r\n
 comment3.params=
 comment3.target=java.util.ArrayList\ guessSix()
+comment3.text=\r\n\ Guess\ Six\ random\ Numbers\r\n\ @return\ ArrayList\ of\ random\ Numbers\r\n
 comment4.params=
 comment4.target=void\ resetOccurences()
+comment4.text=\r\n\ Reset\ the\ occurences\ HashMap\r\n
 numComments=5

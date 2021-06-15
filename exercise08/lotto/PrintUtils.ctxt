@@ -1,13 +1,16 @@
 #BlueJ class context
 comment0.target=PrintUtils
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ PrintUtils\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ PrintUtils\ for\ the\ Lotto\ Class.\r\n\r\n\ @author\ Alexander\ Ehrenh\u00F6fer\r\n\ @version\ 03.06.2021\r\n
 comment1.params=
 comment1.target=PrintUtils()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ PrintUtils\r\n
 comment2.params=occurences\ tableTitle
 comment2.target=void\ printOccurencesTable(java.util.HashMap,\ java.lang.String)
+comment2.text=\r\n\ print\ a\ table\ with\ the\ occurences\ visualized\r\n
 comment3.params=occurences\ maxOccurences
 comment3.target=java.lang.String\ getOccurencePlot(java.lang.Integer,\ java.lang.Integer)
+comment3.text=\r\n\ Returns\ a\ Bar\ Plot\ to\ visualize\ the\ deviation\ of\ the\ occurence\ count\r\n\ @returns\ Bar\ Plot\ as\ String\r\n
 comment4.params=occurences
 comment4.target=java.lang.Integer\ getHighestOccurence(java.util.HashMap)
+comment4.text=\r\n\ Get\ the\ Highes\ Number\ in\ a\ HashMap\r\n\ @returns\ the\ Hightes\ Value\r\n
 numComments=5
